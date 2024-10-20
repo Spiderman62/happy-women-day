@@ -2,14 +2,18 @@
   "name": "flower",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/Spiderman62/happy-women-day",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "core-js": "^3.8.3",
     "flower": "file:",
+    "gh-pages": "^6.2.0",
     "vue": "^3.2.13",
     "vue-router": "^4.4.5",
     "vuex": "^4.1.0"
